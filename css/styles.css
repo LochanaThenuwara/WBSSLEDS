@@ -222,13 +222,21 @@ footer {
   }
   #topname{
       float: right;
+<<<<<<< HEAD
       font-size: 15px;
      
+=======
+      font-size: 18px;
+      padding-left: 5px;
+>>>>>>> e671ff7dc1f55746368b171c9d6548e6cd3e4957
       padding-top: 10px;
       border-left-color: #000;
       
       color: #000d69;
+<<<<<<< HEAD
       font-family: sans-serif;
+=======
+>>>>>>> e671ff7dc1f55746368b171c9d6548e6cd3e4957
      
       
   }
@@ -277,12 +285,15 @@ footer {
   #abt{
       text-align: justify;
   }
+<<<<<<< HEAD
   .erb-image-wrapper img{
     max-width:100% !important;
     max-height:100% !important;
     display:block;
 }
 
+=======
+>>>>>>> e671ff7dc1f55746368b171c9d6548e6cd3e4957
   
 }
 

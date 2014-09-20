@@ -10,11 +10,11 @@
         <![endif]-->
     <title>Free Multipurpose Template : RUMA</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />    
+    <link href="css/style.css" rel="stylesheet" />    
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
@@ -48,11 +48,11 @@ Sri Lanka Eye Donation Society is the mother body of ,
                 </div>
                <div class="col-md-4 col-sm-4">
                     <h4> <strong></strong> </h4>
-                    <image src="images/logofooter.png" id="logof">
+                    <image src="interface/images/logofooter.png" id="logof">
                 </div>  
                <div id="founder" class="col-md-4 ">
                    <h4> <strong   class="fit">OUR FOUNDER</strong> </h4>
-                   <image src="images/doctor.jpg">
+                   <image src="interface/images/doctor.jpg">
                        <p><b>
                               Deshabandu 
                               Lion <br>
@@ -65,9 +65,9 @@ Sri Lanka Eye Donation Society
                <div class="social">
                    <h4 id="fi" class="fit"> <strong>FIND US ON</strong> </h4><br><br>
 
-                   <a href="#" target="_blank"><image src="imgs/fb.png" class="social"></a>
-                   <a href="#" target="_blank"><image src="imgs/tw.png" class="social"></a>
-                   <a href="#" target="_blank"><image src="imgs/g.png" class="social"></a>
+                   <a href="#" target="_blank"><image src="interface/imgs/fb.png" class="social"></a>
+                   <a href="#" target="_blank"><image src="interface/imgs/tw.png" class="social"></a>
+                   <a href="#" target="_blank"><image src="interface/imgs/g.png" class="social"></a>
                     
                     
                 </div>

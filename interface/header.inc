@@ -17,7 +17,7 @@
 	</head>
         <body >
 <nav class="navbar navbar-static" script>
-    <a class="navbar-brand " href="http://localhost/netbeans/Eyee/index.php" target="ext"><b><image src="images/eye.png"></b></a>
+    <a class="navbar-brand " href="http://localhost/netbeans/Eyee/index.php" target="ext"><b><image src="interface/images/eye.png"></b></a>
    <div class="container">
     <div class="navbar-header" >
       

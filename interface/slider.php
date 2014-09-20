@@ -138,9 +138,9 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
     <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
-    <script type="text/javascript" src="jss/jssor.core.js"></script>
-    <script type="text/javascript" src="jss/jssor.utils.js"></script>
-    <script type="text/javascript" src="jss/jssor.slider.js"></script>
+    <script type="text/javascript" src="interface/jss/jssor.core.js"></script>
+    <script type="text/javascript" src="interface/jss/jssor.utils.js"></script>
+    <script type="text/javascript" src="interface/jss/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
@@ -490,7 +490,7 @@
             //slider cluster controller code end
         });
     </script>
-    <div style="position: relative; margin-top: 0px; top: 0px; left: 0px; width:100%; text-align: center; background-image: url(imgs/bc1.png); background-repeat: repeat;border-top: 0px solid gray; border-bottom: 0px solid gray; overflow: hidden;">
+    <div style="position: relative; margin-top: 0px; top: 0px; left: 0px; width:100%; text-align: center; background-image: url(interface/imgs/bc1.png); background-repeat: repeat;border-top: 0px solid gray; border-bottom: 0px solid gray; overflow: hidden;">
         <!-- Jssor Slider Begin -->
         <!-- You can move inline styles to css file or css block. --> 
         <div id="sliderc_container" style="position: relative; margin: 0 auto; width: 960px;
@@ -522,25 +522,25 @@
                         <!-- Slides Container -->
                         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px; overflow: hidden;">
                             <div>
-                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="img/photography/002.jpg" alt="image slider" /></a>
+                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="interface/img/photography/002.jpg" alt="image slider" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 mobile ready, touch swipe
                                 </div>
                             </div>
                             <div>
-                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="img/photography/003.jpg" alt="jqeury image slider" /></a>
+                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="interface/img/photography/003.jpg" alt="jqeury image slider" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 finger catchable right to left
                                 </div>
                             </div>
                             <div>
-                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="img/photography/004.jpg" alt="responsive image slider" /></a>
+                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="interface/img/photography/004.jpg" alt="responsive image slider" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 responsive, scale smoothly
                                 </div>
                             </div>
                             <div>
-                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="img/photography/005.jpg" alt="touch swipe image slider" /></a>
+                                <a u="image" href="http://www.jssor.com/demos/image-slider.html"><img src="interface/img/photography/005.jpg" alt="touch swipe image slider" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 random caption transition
                                 </div>
@@ -572,7 +572,7 @@
             	                position: absolute;
             	                cursor: pointer;
             	                display: block;
-                                background: url(img/a02.png) no-repeat;
+                                background: url(interface/img/a02.png) no-repeat;
                                 overflow:hidden;
                             }
                             .jssora02l { background-position: -3px -33px; }
@@ -630,7 +630,7 @@
                             <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                                 background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
                             </div>
-                            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                            <div style="position: absolute; display: block; background: url(interface/img/loading.gif) no-repeat center center;
                                 top: 0px; left: 0px;width: 100%;height:100%;">
                             </div>
                         </div>
@@ -639,13 +639,13 @@
                         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
                             overflow: hidden;">
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="img/photography/002.jpg" alt="banner rotator" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="interface/img/photography/002.jpg" alt="banner rotator" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 slideshow transition twins
                                 </div>
                             </div>
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="img/photography/003.jpg" alt="jquery banner rotator" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="interface/img/photography/003.jpg" alt="jquery banner rotator" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 random caption transition
                                 </div>
@@ -657,7 +657,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="img/photography/005.jpg" alt="touch swipe banner rotator" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-rotator.html"><img src="interface/img/photography/005.jpg" alt="touch swipe banner rotator" /></a>
                                 <div u=caption t="*" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                                 responsive, scale smoothly
                                 </div>
@@ -730,7 +730,7 @@
                             <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                                 background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
                             </div>
-                            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                            <div style="position: absolute; display: block; background: url(interface/img/loading.gif) no-repeat center center;
                                 top: 0px; left: 0px;width: 100%;height:100%;">
                             </div>
                         </div>
@@ -739,19 +739,19 @@
                         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
                             overflow: hidden;">
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="img/photography/002.jpg" alt="banner slider" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="interface/img/photography/002.jpg" alt="banner slider" /></a>
                                 <div u="thumb">SriLanka Eye Donation Society</div>
                             </div>
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="img/photography/003.jpg" alt="jquery banner slider" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="interface/img/photography/003.jpg" alt="jquery banner slider" /></a>
                                 <div u="thumb">SriLanka Eye Donation Society</div>
                             </div>
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="img/photography/004.jpg" alt="responsive banner slider" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="interface/img/photography/004.jpg" alt="responsive banner slider" /></a>
                                 <div u="thumb">Do you notice navigator responses when drag?</div>
                             </div>
                             <div>
-                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="img/photography/005.jpg" alt="touch swipe banner slider" /></a>
+                                <a u=image href="http://www.jssor.com/demos/banner-slider.html"><img src="interface/img/photography/005.jpg" alt="touch swipe banner slider" /></a>
                                 <div u="thumb">Do you notice arrow responses when click?</div>
                             </div>
                         </div>
@@ -841,7 +841,7 @@
                 */
                 .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av
                 {
-                    background: url(img/b03.png) no-repeat;
+                    background: url(interface/img/b03.png) no-repeat;
                     overflow:hidden;
                     cursor: pointer;
                 }
@@ -873,7 +873,7 @@
             	    position: absolute;
             	    cursor: pointer;
             	    display: block;
-                    background: url(img/a20.png) no-repeat;
+                    background: url(interface/img/a20.png) no-repeat;
                     overflow:hidden;
                 }
                 .jssora20l { background-position: -3px -33px;  }

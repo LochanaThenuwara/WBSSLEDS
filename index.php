@@ -7,12 +7,12 @@
 		<title>SriLanka Eye Donation Society</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+                <link href="interface/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
+                <link href="interface/css/styles.css" rel="stylesheet">
                 
 	</head>
 	<body>
@@ -20,13 +20,13 @@
             
             <section >
     <?php 
-    include 'header.inc';
+    include 'interface/header.inc';
     
     ?>
     <?php 
     
-    include 'slider.php';
-   include 'footer.inc';
+    include 'interface/slider.php';
+   include 'interface/footer.inc';
     ?>
             </section>
             

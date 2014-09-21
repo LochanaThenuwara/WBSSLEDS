@@ -22,11 +22,9 @@
     <?php
     require_once 'core/init.php';
     
-    $user = DB::getInstance()->update('users',2,array(
-        'username'=> 'Dale Barrel',
-        'password'=> 'pwd'
-           
-    ));
+   if(Session::exists('home')){
+       echo '<p>'. Session::flash('home').'</p> ';
+   }
    
     include 'interface/header.inc';
     

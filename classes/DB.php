@@ -1,16 +1,28 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * Description of DB
- *
- * @author Tharindu
- */
 class DB {
-    //put your code here
+    private static $_instance = null;
+    private $_pdo,
+            $_query,
+            $_error = false,
+            $_results,
+            $_count = 0;
+    
+    private function __construct(){
+        try {
+            $this->_pdo = new PDO('mysql:host='.Config::get('mysql/host').';dbname='.Config::get('mysql/db'), Config::get('mysql/username'),  Config::get('mysql/password'));
+            //echo 'connected';
+        } catch (PDOException $e) {
+            die($e ->getMessage());
+            
+        }
+        
+    }
+    public static function getInstance(){
+        if(!isset(self::$_instance)){
+            self::$_instance = new DB();
+        }
+        return self::$_instance;
+    }
 }

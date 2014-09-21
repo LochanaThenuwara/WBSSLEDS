@@ -46,7 +46,12 @@ class Validation {
                 }
                 
             }
+            
         }
+         if (empty($this->_errors)) {
+            $this->_passed = true;
+        }
+        return $this;
         
     }
     private function addError($error){

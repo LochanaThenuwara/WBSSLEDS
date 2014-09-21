@@ -3,7 +3,9 @@ require_once 'core/init.php';
 require_once 'classes/validation.php';
 
 
+
 if(Input::exists()){
+    if(Token::check(Input::get('token'))){
     $validate = new Validation();
     $validation = $validate->check($_POST,array(
         'username'=> array(
@@ -35,6 +37,7 @@ if(Input::exists()){
        
         
     }
+    }
 }
 ?>
 
@@ -55,8 +58,9 @@ if(Input::exists()){
     </div>
     <div class="field">
         <label for="name"> Name </label>
-        <input type="text" name="name" id="name" value="" >
+        <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name')); ?>" >
     </div>
+    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
     <input type="submit" value="registered">
 </form>
     

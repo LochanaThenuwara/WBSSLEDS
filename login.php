@@ -10,7 +10,16 @@ if(Input::exists()){
         ));
         
         if($validation->passed()){
-            header('Location:index.php');
+           //header('Location:index.php');
+            $user = new User();
+            $login = $user->login(Input::get('username'), Input::get('password'));
+            if($login){
+                Redirect::to('index.php');
+                
+            }  else {
+                echo '<p>Sorry,loggin in failed.</p>';
+                
+            }
             
         }  else {
             foreach ($validation->errors() as $error){

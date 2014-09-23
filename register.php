@@ -64,6 +64,10 @@ if(Input::exists()){
         <label for="username"> Username </label>
         <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username'));?>" autocomplete="off">
     </div>
+    <div class="field">
+        <label for="username"> ID </label>
+        <input type="text" name="id" id="id" value="<?php echo escape(Input::get('id'));?>" autocomplete="off">
+    </div>
     <div class="field"> 
         <label for="password">Choose a password</label>
         <input type="password" name="password" id="password">

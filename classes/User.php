@@ -51,14 +51,14 @@ class User{
          
          
          if($user){
-             if($this->data()->password === Hash::make($password, $this->data()->salt)){
-                 Session::put($this->_sessionName,  $this->data()->id);
-                 return TRUE;
-                 
-             }
+             if ($user) {
+			if ($this->data()->password==Hash::make($password, $this->data()->salt)) {
+				Session::put($this->_sessionName, $this->data()->Patient_ID);
+				return true;
+			}
          }
          return FALSE;
-     }
+     }}
      
      public function data(){
          return $this->_data;

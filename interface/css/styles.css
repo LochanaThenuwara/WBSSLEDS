@@ -266,9 +266,11 @@ footer {
   .fit{
       color: #fff;
       text-align: justify;
+      margin-left: 50%;
   }
   #fi{
       float: right;
+      //margin-left: 80%;
   }
   .tagline{
       color: #fff;

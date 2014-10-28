@@ -28,7 +28,7 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">  
             <li ><a href="#" class="active" >Home</a></li>
-          <li><a href="#">Surgeons</a></li>
+          <li><a href="surgeon.php">Surgeons</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Donate</a>
             <ul class="dropdown-menu">

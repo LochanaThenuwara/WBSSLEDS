@@ -1,11 +1,15 @@
 <?php
 require_once 'core/init.php';
-require_once 'classes/validation.php';
+
 
 
 
 if(Input::exists()){
+    
+    
     if(Token::check(Input::get('token'))){
+        
+
     $validate = new Validation();
     $validation = $validate->check($_POST,array(
         'username'=> array(
@@ -28,10 +32,37 @@ if(Input::exists()){
             'max' => 50,
         )
     ));
-    if ($validate->passed()){
-        $user = new User();
+    if ($validation->passed()){
+        $surgeon = new Surgeon();
         $salt = Hash::salt(32);
         
+        try {
+            $surgeon->create(array(
+                'username' => Input::get('username'),
+                'password' => Hash::make(Input::get('password'),$salt),
+                'salt' => $salt,
+                'name' => Input::get('name'),
+                'joined' => date('Y-m-d H:i:s'),
+                'group' => 1
+            ));
+            
+            
+        } catch (Exception $e) {
+            die($e->getMessage());
+            
+        }
+    }else {
+        foreach ($validate->errors() as $error){
+            echo $error, '<br>';
+        }
+    }
+    }
+}
+
+   /* if ($validate->passed()){
+        $user = new User();
+        $salt = Hash::salt(32);
+       
         try {
             $user->create(array(
                 'username' => Input::get('username'),
@@ -41,14 +72,16 @@ if(Input::exists()){
                 'group' => 1
                 
             ));
-            Session::flash('home','You have been registered and can now log in!');
-            header('Location:index.php');
-            
+            echo 'djfk';
+          //  Session::flash('home','You have been registered and can now log in!');
+           // header('Location:index.php');
+          
         } catch (Exception $e) {
             die($e->getMessage());
             
         }
     }  else {
+         
         foreach ($validate->errors() as $error){
             echo $error, '<br>';
         }
@@ -56,7 +89,7 @@ if(Input::exists()){
         
     }
     }
-}
+}*/
 ?>
 
 <form action="" method="post">
@@ -64,10 +97,7 @@ if(Input::exists()){
         <label for="username"> Username </label>
         <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username'));?>" autocomplete="off">
     </div>
-    <div class="field">
-        <label for="username"> ID </label>
-        <input type="text" name="id" id="id" value="<?php echo escape(Input::get('id'));?>" autocomplete="off">
-    </div>
+   
     <div class="field"> 
         <label for="password">Choose a password</label>
         <input type="password" name="password" id="password">
@@ -83,6 +113,6 @@ if(Input::exists()){
         <input type="text" name="name" id="name" value="<?php echo escape(Input::get('name')); ?>" >
     </div>
     <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-    <input type="submit" value="registered">
+    <input type="submit" value="register">
 </form>
     

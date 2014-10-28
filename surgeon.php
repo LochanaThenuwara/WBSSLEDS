@@ -194,12 +194,24 @@ if (Input::exists()) {
             ));
             
             
-            
+            echo '<div class="alert alert-info" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <strong>Your membership request is submitted. Our system administrators will verify your data and decide
+               weather approve it or no.We will seng you a email you will get the membership or not. It may take about one day or more.
+               !!,<br> <a href="surgeon.php">Back</a><br> <a href="index.php">Home</a></strong> 
+               </div>';
 
             Session::flash('index','You have been registered and can now log in!');
             
+            //Redirect::to('index.php');
             
-            Redirect::to('index.php');
+            /*echo '<div class="alert alert-info" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Your membership request is submitted. Our system administrators will verify your data and decide
+  weather approve it or no.We will seng you a email you will get the membership or not. It may take about one day or more.
+  !!</strong> 
+</div>';*/
+            
             
             
             

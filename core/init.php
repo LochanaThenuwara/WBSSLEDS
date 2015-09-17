@@ -7,7 +7,7 @@ $GLOBALS['config'] = array(
         'host'=> '127.0.0.1',
         'username'=> 'root',
         'password'=>'',
-        'db'=>'wbssleds'
+        'db'=>'eye_donation'
     ),
     'remember'=> array(
         'cookie_name'=> 'hash',
@@ -19,10 +19,24 @@ $GLOBALS['config'] = array(
     )
 );
 spl_autoload_register(function($class){
-    require_once 'classes/'.$class.'.php';
-}
-        );
+require_once 'classes/'.$class. '.php';
+});
+       
         
         require_once 'functions/sanitize.php';
+        
+
+if(Cookie::exists(Config::get('remember/cookie_name')) && !Session::exists(Config::get('session/session_name'))){
+    
+    $hash = Cookie::get(Config::get('remember/cookie_name'));
+    $hashCheck = DB::getInstance()->get('users_session',array('hash','=',$hash));
+    
+    if($hashCheck->count()){
+        
+        $surgeon = new Surgeon($hashCheck->first()->user_id);
+        $surgeon->login();
+        
+    }
+}
 
 
